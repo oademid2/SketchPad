@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sketch.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="7.0" layoutY="93.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="456.0" />
+      <Canvas fx:id="myCanvas" height="17.0" layoutX="129.0" layoutY="314.0" width="10.0" />
+      <Button fx:id="rectBtn" layoutX="259.0" layoutY="21.0" mnemonicParsing="false" text="rectangle" />
+      <AnchorPane fx:id="pane" layoutX="-2.0" layoutY="125.0" onMouseDragged="#paneMouseDrag" onMousePressed="#paneMousePress" onMouseReleased="#paneMouseRelease" prefHeight="396.0" prefWidth="787.0" style="-fx-background-color: #d3d3d3;" />
+      <Button fx:id="lineBtn" layoutX="340.0" layoutY="21.0" mnemonicParsing="false" text="line" />
+      <Button fx:id="circBtn" layoutX="198.0" layoutY="21.0" mnemonicParsing="false" text="circle" />
+      <Button fx:id="elipBtn" layoutX="360.0" layoutY="52.0" mnemonicParsing="false" text="elipses" />
+      <Button fx:id="squareBtn" layoutX="432.0" layoutY="52.0" mnemonicParsing="false" text="square" />
+      <Button fx:id="freeBtn" layoutX="198.0" layoutY="52.0" mnemonicParsing="false" text="free draw" />
+      <Button fx:id="polyBtn" layoutX="284.0" layoutY="52.0" mnemonicParsing="false" text="polygon" />
+      <Button fx:id="polyOpenBtn" layoutX="383.0" layoutY="21.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="108.0" text="open polygon" />
+      <Button fx:id="editBtn" layoutX="16.0" layoutY="50.0" mnemonicParsing="false" text="edit" />
+      <Button fx:id="delBtn" layoutX="514.0" layoutY="53.0" mnemonicParsing="false" text="delete" />
+      <Button fx:id="copyBtn" layoutX="518.0" layoutY="20.0" mnemonicParsing="false" text="copy" />
+      <Button fx:id="pasteBtn" layoutX="579.0" layoutY="53.0" mnemonicParsing="false" text="paste" />
+      <Button layoutX="96.0" layoutY="-42.0" mnemonicParsing="false" text="draw" />
+      <Button fx:id="groupBtn" layoutX="639.0" layoutY="53.0" mnemonicParsing="false" text="group" />
+      <Button fx:id="ungroupBtn" layoutX="570.0" layoutY="20.0" mnemonicParsing="false" text="ungroup" />
+      <Button fx:id="undoBtn" layoutX="71.0" layoutY="17.0" mnemonicParsing="false" text="undo" />
+      <Button fx:id="redoBtn" layoutX="71.0" layoutY="53.0" mnemonicParsing="false" text="redo" />
+      <Button fx:id="doneBtn" layoutX="642.0" layoutY="20.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="52.0" text="done" />
+      <Button fx:id="loadBtn" layoutX="129.0" layoutY="53.0" mnemonicParsing="false" text="load" />
+      <Button fx:id="saveBtn" layoutX="128.0" layoutY="17.0" mnemonicParsing="false" text="save" />
+      <ColorPicker fx:id="colorselect" layoutX="483.0" layoutY="88.0" />
+    </children>
+</AnchorPane>
